@@ -40676,39 +40676,47 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 function Home() {
-  // const numbers = [
-  //   {
-  //     title: "Search",
-  //     disc:
-  //       "Looking for shopping ? Best offers in your Location ? New Collections in Stores",
-  //     img: "/images/fashopi.jpg"
-  //   },
-  //   {
-  //     title: "Select",
-  //     disc:
-  //       "Browse and select the best store near your that matches your shopping in there",
-  //     img: "/images/fashopi.jpg"
-  //   },
-  //   {
-  //     title: "Shop",
-  //     disc:
-  //       "Go & have a great shopping,rate and review your experience.Thank FASHOPI!",
-  //     img: "/images/fashopi.jpg"
-  //   }
-  // ];
+  var numbers = [{
+    title: "Search",
+    disc: "Looking for shopping ? Best offers in your Location ? New Collections in Stores",
+    img: "/images/fashopi.jpg"
+  }, {
+    title: "Select",
+    disc: "Browse and select the best store near your that matches your shopping in there",
+    img: "/images/fashopi.jpg"
+  }, {
+    title: "Shop",
+    disc: "Go & have a great shopping,rate and review your experience.Thank FASHOPI!",
+    img: "/images/fashopi.jpg"
+  }];
   return __jsx("div", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 35
     },
     __self: this
-  }, __jsx(_Components_DataTable__WEBPACK_IMPORTED_MODULE_9__["default"], {
+  }, __jsx(react_bootstrap_Container__WEBPACK_IMPORTED_MODULE_6__["default"], {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 36
     },
     __self: this
-  }));
+  }, __jsx(react_bootstrap_Row__WEBPACK_IMPORTED_MODULE_7__["default"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 37
+    },
+    __self: this
+  }, numbers.map(function (number) {
+    return __jsx(_pages_Cards__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      data: number,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 39
+      },
+      __self: this
+    });
+  }))));
 }
 
 /* harmony default export */ __webpack_exports__["default"] = (Home);
